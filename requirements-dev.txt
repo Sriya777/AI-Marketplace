@@ -1,0 +1,6 @@
+-r requirements.txt
+# --- tests ---
+pytest>=8.0
+requests>=2.31
+selenium>=4.20        # real-browser end-to-end test (also needs Firefox + geckodriver)
+matplotlib>=3.8       # only for the original models/train_sample_model.py demo

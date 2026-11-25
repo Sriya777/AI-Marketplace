@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/proj/crypto-marketplace
+plugins: platformdirs-4.13.0, anyio-4.16.0
+collecting ... collected 28 items
+
+tests/test_integration.py::test_01_health_reports_real_dependencies PASSED [  3%]
+tests/test_integration.py::test_02_registration_login_roles PASSED       [  7%]
+tests/test_integration.py::test_02b_logout_invalidates_the_session_server_side PASSED [ 10%]
+tests/test_integration.py::test_03_x509_certificates PASSED              [ 14%]
+tests/test_integration.py::test_04_dataset_validation_rejects_bad_data PASSED [ 17%]
+tests/test_integration.py::test_05_upload_real_dataset PASSED            [ 21%]
+tests/test_integration.py::test_06_every_algorithm_really_trains PASSED  [ 25%]
+tests/test_integration.py::test_07_training_input_validation PASSED      [ 28%]
+tests/test_integration.py::test_08_train_main_models_on_uploaded_digits PASSED [ 32%]
+tests/test_integration.py::test_08b_evaluation_endpoint PASSED           [ 35%]
+tests/test_integration.py::test_09_deploy_and_predict PASSED             [ 39%]
+tests/test_integration.py::test_10_protection_order_and_failure_handling PASSED [ 42%]
+tests/test_integration.py::test_11_protect_all_for_model_B_with_approval_license PASSED [ 46%]
+tests/test_integration.py::test_12_no_secrets_at_rest_and_owner_ecc_decryption PASSED [ 50%]
+tests/test_integration.py::test_13_registration_on_real_chain PASSED     [ 53%]
+tests/test_integration.py::test_14_metamask_style_registration_path PASSED [ 57%]
+tests/test_integration.py::test_15_verification_against_blockchain PASSED [ 60%]
+tests/test_integration.py::test_16_merkle_chunk_proofs PASSED            [ 64%]
+tests/test_integration.py::test_17_marketplace_listing PASSED            [ 67%]
+tests/test_integration.py::test_17b_encrypted_artifact_is_public_ciphertext_only PASSED [ 71%]
+tests/test_integration.py::test_18_single_use_license_distribution PASSED [ 75%]
+tests/test_integration.py::test_19_approval_required_license_flow PASSED [ 78%]
+tests/test_integration.py::test_20_tampered_stored_file_blocks_distribution PASSED [ 82%]
+tests/test_integration.py::test_21_tamper_security_suite PASSED          [ 85%]
+tests/test_integration.py::test_22_logs_and_dashboard PASSED             [ 89%]
+tests/test_integration.py::test_22b_undeploy_and_redeploy_from_encrypted_store PASSED [ 92%]
+tests/test_integration.py::test_22c_remaining_read_endpoints PASSED      [ 96%]
+tests/test_integration.py::test_23_save_state_for_restart_test PASSED    [100%]
+
+============================= 28 passed in 15.00s ==============================

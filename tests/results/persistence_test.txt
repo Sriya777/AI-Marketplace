@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/proj/crypto-marketplace
+plugins: platformdirs-4.13.0, anyio-4.16.0
+collecting ... collected 1 item
+
+tests/test_persistence.py::test_after_restart PASSED                     [100%]
+
+============================== 1 passed in 0.22s ===============================

@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/proj/crypto-marketplace
+plugins: platformdirs-4.13.0, anyio-4.16.0
+collecting ... collected 28 items
+
+tests/test_crypto_suite.py::test_sha3_known_answer_vectors PASSED        [  3%]
+tests/test_crypto_suite.py::test_hash_file_matches_bytes PASSED          [  7%]
+tests/test_crypto_suite.py::test_csprng_unique_and_sized PASSED          [ 10%]
+tests/test_crypto_suite.py::test_aes_gcm_roundtrip_and_authentication PASSED [ 14%]
+tests/test_crypto_suite.py::test_aes_nonce_never_reused PASSED           [ 17%]
+tests/test_crypto_suite.py::test_hkdf_context_and_salt_separation PASSED [ 21%]
+tests/test_crypto_suite.py::test_hkdf_rfc5869_vector PASSED              [ 25%]
+tests/test_crypto_suite.py::test_scrypt_deterministic_and_salted PASSED  [ 28%]
+tests/test_crypto_suite.py::test_keystore_password_and_private_key_at_rest PASSED [ 32%]
+tests/test_crypto_suite.py::test_ecdsa_sign_verify_and_tamper PASSED     [ 35%]
+tests/test_crypto_suite.py::test_ecdh_shared_secret_agrees PASSED        [ 39%]
+tests/test_crypto_suite.py::test_ecies_wrap_unwrap_and_isolation PASSED  [ 42%]
+tests/test_crypto_suite.py::test_escrow_wrap PASSED                      [ 46%]
+tests/test_crypto_suite.py::test_x509_chain_validation PASSED            [ 50%]
+tests/test_crypto_suite.py::test_merkle_every_chunk_proof_verifies[1] PASSED [ 53%]
+tests/test_crypto_suite.py::test_merkle_every_chunk_proof_verifies[2] PASSED [ 57%]
+tests/test_crypto_suite.py::test_merkle_every_chunk_proof_verifies[3] PASSED [ 60%]
+tests/test_crypto_suite.py::test_merkle_every_chunk_proof_verifies[5] PASSED [ 64%]
+tests/test_crypto_suite.py::test_merkle_every_chunk_proof_verifies[8] PASSED [ 67%]
+tests/test_crypto_suite.py::test_merkle_every_chunk_proof_verifies[13] PASSED [ 71%]
+tests/test_crypto_suite.py::test_merkle_every_chunk_proof_verifies[100] PASSED [ 75%]
+tests/test_crypto_suite.py::test_merkle_detects_tampered_chunk_and_wrong_proof PASSED [ 78%]
+tests/test_crypto_suite.py::test_merkle_no_duplicate_leaf_second_preimage PASSED [ 82%]
+tests/test_crypto_suite.py::test_merkle_domain_separation_leaf_vs_node PASSED [ 85%]
+tests/test_crypto_suite.py::test_merkle_root_changes_with_any_byte PASSED [ 89%]
+tests/test_cifar_prepare.py::test_conversion_shapes_and_balance PASSED   [ 92%]
+tests/test_cifar_prepare.py::test_pooling_is_correct PASSED              [ 96%]
+tests/test_cifar_prepare.py::test_generated_csv_passes_platform_validation_and_trains PASSED [100%]
+
+============================== 28 passed in 2.80s ==============================

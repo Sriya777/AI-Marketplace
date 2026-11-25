@@ -1,0 +1,15 @@
+.env
+.venv/
+.run/
+storage/
+__pycache__/
+*.pyc
+node_modules/
+.next/
+blockchain/deployment.json
+blockchain/cache/
+blockchain/artifacts/
+datasets/.cache/
+datasets/cifar10_subset.csv
+models/artifacts/*.enc
+tests/results/.state.json

@@ -1,0 +1,11 @@
+# --- runtime ---
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pymongo>=4.6
+web3>=7.0
+cryptography>=42.0
+scikit-learn>=1.4
+pandas>=2.1
+numpy>=1.26
+joblib>=1.3

@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/proj/crypto-marketplace
+plugins: platformdirs-4.13.0, anyio-4.16.0
+collecting ... collected 12 items
+
+tests/test_browser_e2e.py::test_01_login_guard_and_registration PASSED   [  8%]
+tests/test_browser_e2e.py::test_02_train_model_through_the_ui PASSED     [ 16%]
+tests/test_browser_e2e.py::test_03_deploy_and_predict PASSED             [ 25%]
+tests/test_browser_e2e.py::test_04_cryptographic_protection PASSED       [ 33%]
+tests/test_browser_e2e.py::test_05_register_on_blockchain PASSED         [ 41%]
+tests/test_browser_e2e.py::test_06_buyer_verifies_requests_and_downloads PASSED [ 50%]
+tests/test_browser_e2e.py::test_07_security_suite_in_the_ui PASSED       [ 58%]
+tests/test_browser_e2e.py::test_08_dashboard_numbers_match_backend PASSED [ 66%]
+tests/test_browser_e2e.py::test_09_register_with_wallet_standin PASSED   [ 75%]
+tests/test_browser_e2e.py::test_10_csv_upload_in_the_ui PASSED           [ 83%]
+tests/test_browser_e2e.py::test_11_undeploy_and_redeploy_in_the_ui PASSED [ 91%]
+tests/test_browser_e2e.py::test_12_stepwise_protection_registration_and_approval_flow PASSED [100%]
+
+======================== 12 passed in 72.53s (0:01:12) =========================

@@ -1,0 +1,13 @@
+[1;36m[start][0m MongoDB already running on :27017
+[1;36m[start][0m blockchain node already running on :8545
+[1;36m[start][0m compiling / deploying ModelRegistry
+Contract already deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+[1;36m[start][0m starting FastAPI backend
+[1;36m[start][0m backend is up (5s)
+[1;36m[start][0m frontend already running on :3000
+
+[1;36m[start][0m ready:
+   Frontend   http://localhost:3000
+   API docs   http://127.0.0.1:8000/docs
+   Health     http://127.0.0.1:8000/api/health
+   Logs       /home/claude/proj/crypto-marketplace/.run/logs     (stop everything with ./scripts/stop.sh)

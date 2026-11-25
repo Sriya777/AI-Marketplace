@@ -1,0 +1,94 @@
+{
+  "ranAt": "2026-11-17T13:00:15.040Z",
+  "chain": "http://127.0.0.1:8545",
+  "contract": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+  "total": 17,
+  "failed": 0,
+  "results": [
+    {
+      "name": "deployer is admin and authorized developer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "non-admin cannot authorize developers",
+      "passed": true,
+      "detail": "reverted: \"Only admin\""
+    },
+    {
+      "name": "UNAUTHORIZED wallet cannot register a model",
+      "passed": true,
+      "detail": "reverted: \"Not an authorized developer\""
+    },
+    {
+      "name": "admin authorizes developer A and B",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "authorized developer registers a model (real tx)",
+      "passed": true,
+      "detail": "tx 0x00a00fd601... block 8"
+    },
+    {
+      "name": "record can be retrieved and matches what was registered",
+      "passed": true,
+      "detail": "owner=0x8faBfC93... timestamp=1794920418"
+    },
+    {
+      "name": "DUPLICATE registration by the owner is rejected",
+      "passed": true,
+      "detail": "reverted: \"Model already registered\""
+    },
+    {
+      "name": "DUPLICATE registration by another authorized developer is rejected",
+      "passed": true,
+      "detail": "reverted: \"Model already registered\""
+    },
+    {
+      "name": "non-owner cannot update the license",
+      "passed": true,
+      "detail": "reverted: \"Not the model owner\""
+    },
+    {
+      "name": "non-owner cannot revoke the model",
+      "passed": true,
+      "detail": "reverted: \"Not the model owner\""
+    },
+    {
+      "name": "unauthorized wallet cannot update the license",
+      "passed": true,
+      "detail": "reverted: \"Not the model owner\""
+    },
+    {
+      "name": "owner can update license; integrity fields stay immutable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid inputs rejected (zero hash, empty id)",
+      "passed": true,
+      "detail": "reverted: \"Invalid model id\""
+    },
+    {
+      "name": "unknown model id -> Model not found",
+      "passed": true,
+      "detail": "reverted: \"Model not found\""
+    },
+    {
+      "name": "owner can revoke; further changes blocked",
+      "passed": true,
+      "detail": "reverted: \"Model revoked\""
+    },
+    {
+      "name": "model enumeration (modelCount / modelIdAt)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "admin can revoke a developer; they can no longer register",
+      "passed": true,
+      "detail": "reverted: \"Not an authorized developer\""
+    }
+  ]
+}

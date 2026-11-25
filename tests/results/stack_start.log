@@ -1,0 +1,18 @@
+[1;36m[start][0m starting MongoDB (/tmp/mamba/envs/mongo/bin/mongod)
+[1;36m[start][0m MongoDB is up (2s)
+[1;36m[start][0m starting Hardhat local blockchain
+[1;36m[start][0m Hardhat node is up (3s)
+[1;36m[start][0m compiling / deploying ModelRegistry
+Deploying ModelRegistry to chain 31337 (http://127.0.0.1:8545) from 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+ModelRegistry deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+tx: 0x3803a3c59076facff2ca5132c9b3f3f31abdcad3364dde468687653ed786ce4b block: 1
+Saved deployment info -> blockchain/deployment.json
+[1;36m[start][0m starting FastAPI backend
+[1;36m[start][0m backend is up (4s)
+[1;36m[start][0m frontend already running on :3000
+
+[1;36m[start][0m ready:
+   Frontend   http://localhost:3000
+   API docs   http://127.0.0.1:8000/docs
+   Health     http://127.0.0.1:8000/api/health
+   Logs       /home/claude/proj/crypto-marketplace/.run/logs     (stop everything with ./scripts/stop.sh)

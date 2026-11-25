@@ -1,0 +1,22 @@
+Fresh contract deployed for testing at 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+
+Contract behaviour tests
+  PASS  deployer is admin and authorized developer
+  PASS  non-admin cannot authorize developers  -> reverted: "Only admin"
+  PASS  UNAUTHORIZED wallet cannot register a model  -> reverted: "Not an authorized developer"
+  PASS  admin authorizes developer A and B
+  PASS  authorized developer registers a model (real tx)  -> tx 0x00a00fd601... block 8
+  PASS  record can be retrieved and matches what was registered  -> owner=0x8faBfC93... timestamp=1794920418
+  PASS  DUPLICATE registration by the owner is rejected  -> reverted: "Model already registered"
+  PASS  DUPLICATE registration by another authorized developer is rejected  -> reverted: "Model already registered"
+  PASS  non-owner cannot update the license  -> reverted: "Not the model owner"
+  PASS  non-owner cannot revoke the model  -> reverted: "Not the model owner"
+  PASS  unauthorized wallet cannot update the license  -> reverted: "Not the model owner"
+  PASS  owner can update license; integrity fields stay immutable
+  PASS  invalid inputs rejected (zero hash, empty id)  -> reverted: "Invalid model id"
+  PASS  unknown model id -> Model not found  -> reverted: "Model not found"
+  PASS  owner can revoke; further changes blocked  -> reverted: "Model revoked"
+  PASS  model enumeration (modelCount / modelIdAt)
+  PASS  admin can revoke a developer; they can no longer register  -> reverted: "Not an authorized developer"
+
+17/17 contract tests passed
